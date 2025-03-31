@@ -1,4 +1,3 @@
-```markdown
 # Visionary Innovation Hub Website
 
 ![Visionary Innovation Hub Logo](assets/images/logo.png)
@@ -17,4 +16,3 @@ A modern static website for Visionary Innovation Hub, showcasing the research an
 
 **Created by** Yergebayev Alimkhan
 **Last Updated**: November 2024
-```
