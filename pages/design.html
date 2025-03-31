@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/default.css" />
+  <link rel="stylesheet" href="../assets/css/design.css" />
+  <title>Design Page</title>
+</head>
+<body>
+  <div class="header-navbar-container">
+    <header>
+      <img
+      src="../assets/images/logo.png"
+      width="334"
+      height="100"
+      alt="Visionary Innovation Hub Logo. Igniting Creativity, Leading Future"
+      />
+      <h1>Visionary <span class="color-effect">Innovation</span> Hub</h1>
+    </header>
+
+    <nav class="navbar" class="stroke">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+      <head>
+      <h4>Design Page</h4>
+      <h5>Name: Yergebayev Alimkhan</h5>
+      <h5>SID: 58697502</h5>
+
+      <h4 style="text-align: center;">CSS</h4>
+
+      <p>I tried to implement responsive design for mobile devices. However, the result is not the best.</p>
+
+      <ul>
+        <li>
+          <p>
+            Use of positioning schemes: static (none) < any one other
+            positioning < more than one meaningful positioning
+          </p>
+
+          <ul>
+            <li>
+              <p><code>default.css</code></p>
+              <ol>
+                <li>
+                  <p>Sticky positioning on line 135</p>
+                  <code
+                    >.navbar { <br />
+                    &emsp;&emsp;background-color: var(--background2);<br />
+                    &emsp;&emsp;position: sticky;<br />
+                    &emsp;&emsp;top: 0;<br />}</code
+                  >
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>home.css</code></p>
+              <ol>
+                <li>
+                  <p>Text alignment on lines 1-3</p>
+                  <code>
+                    .welcome-sentence { <br>
+                      &emsp;&emsp;text-align: center; <br>
+                    } <br>
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>about.css</code></p>
+              <ol>
+                <li>
+                  <p>Image centering using margin and width on lines 1-6</p>
+                  <code>
+                    .aboutimg { <br>
+                      &emsp;&emsp;margin: auto; <br>
+                      &emsp;&emsp;width: 75%; <br>
+                      &emsp;&emsp;object-fit: cover; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>apply.css</code></p>
+              <ol>
+                <li>
+                  <p>Float positioning on lines 29, 84</p>
+                  <code>
+                    .apply-block h4 { <br>
+                      &emsp;&emsp;width: calc(100% / 3 - 2px); <br>
+                      &emsp;&emsp;padding: 8px; <br>
+                      &emsp;&emsp;margin-bottom: 0; <br>
+                      &emsp;&emsp;float: left; <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                    } <br>
+                    <br>
+                    .technology-zone form, <br>
+                    .innovation-zone form, <br>
+                    .ecology-zone form { <br>
+                      &emsp;&emsp;width: calc(100% / 3 - 2px); <br>
+                      &emsp;&emsp;height: 100%; <br>
+                      &emsp;&emsp;margin: 0; <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;float: left; <br>
+                      &emsp;&emsp;background-color: white; <br>
+                      &emsp;&emsp;border: 1px solid var(--accent); <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Flexbox display/positioning</p>
+                  <code>
+                    .input-button { <br>
+                      &emsp;&emsp;display: flex; <br>
+                      &emsp;&emsp;gap: 8px; <br>
+                    } <br>
+                    <br>
+                    .input-button input { <br>
+                      &emsp;&emsp;flex: 1; <br>
+                      &emsp;&emsp;max-width: calc(100% / 2); <br>
+                    } <br>
+                    <br>
+                    .input-button input { <br>
+                      &emsp;&emsp;flex-shrink: 0; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Positioning using sibling combinators and :has() selector on lines 61-75</p>
+                  <code>
+                    #technology-heading:hover ~ .technology-zone, <br>
+                    #innovation-heading:hover ~ .innovation-zone, <br>
+                    #ecology-heading:hover ~ .ecology-zone, <br>
+                    .technology-zone:hover, <br>
+                    .innovation-zone:hover, <br>
+                    .ecology-zone:hover { <br>
+                      &emsp;&emsp;display: block; <br>
+                    } <br>
+                    <br>
+                    #technology-heading:has(~ .technology-zone:hover), <br>
+                    #innovation-heading:has(~ .innovation-zone:hover), <br>
+                    #ecology_heading:has(~ .ecology-zone:hover) { <br>
+                      &emsp;&emsp;background-color: white; <br>
+                      &emsp;&emsp;color: var(--text); <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>visit.css</code></p>
+              <ol>
+                <li>
+                  <p>Center alignment on lines 6-9</p>
+                  <code>
+                    .reservation-block { <br>
+                      &emsp;&emsp;width: 75%; <br>
+                      &emsp;&emsp;margin: auto; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Inline block layout on line 62</p>
+                  <code>
+                    label { <br>
+                      &emsp;&emsp;width: 140px; <br>
+                      &emsp;&emsp;display: inline-block; <br>
+                      &emsp;&emsp;text-align: right; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>program.css</code></p>
+              <ol>
+                <li>
+                  <p>Horizontal centering using margins on lines 1-4</p>
+                  <code>
+                    .table-container { <br>
+                      &emsp;&emsp;margin-left: auto; <br>
+                      &emsp;&emsp;margin-right: auto; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>contact.css</code></p>
+              <ol>
+                <li>
+                  <p>Flexbox layout</p>
+                  <code>
+                    .contact-block { <br>
+                      &emsp;&emsp;display: flex; <br>
+                      &emsp;&emsp;justify-content: center; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Apply two different kinds of CSS3 techniques: basic (round corner,
+            gradient, transform, etc.) < transition < animation
+          </p>
+
+          <ul>
+            <li>
+              <p><code>default.css</code></p>
+              <ol>
+                <li>
+                  <p>Rounded corners in a table on lines 209-215</p>
+                  <code
+                    >thead tr th:first-of-type { <br />
+                    &emsp;&emsp;border-top-left-radius: 8px; <br />
+                    } <br />
+                    thead tr th:last-of-type { <br />
+                    &emsp;&emsp;border-top-right-radius: 8px; <br />
+                    }</code
+                  >
+                </li>
+                <li>
+                  <p>Header gradient on lines 125-129</p>
+                  <code>
+                    .color-effect { <br />
+                    &emsp;&emsp;background: linear-gradient(120deg,
+                    var(--primary), <br />
+                    &emsp;&emsp;var(--accent)); <br />
+                    &emsp;&emsp;background-clip: text; <br />
+                    &emsp;&emsp;color: transparent; <br />
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Button transition on hover on lines 156-161</p>
+                  <code>
+                    .navbar a:hover { <br />
+                    &emsp;&emsp;color: var(--primary); <br />
+                    &emsp;&emsp;padding: 20px 20px 16px 20px; <br />
+                    &emsp;&emsp;border-bottom: 4px solid var(--accent); <br />
+                    &emsp;&emsp;transition: all 0.1s ease; <br />
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Button transition on click on lines 163-168</p>
+                  <code>
+                    .navbar a:active { <br />
+                    &emsp;&emsp;color: #425276; <br />
+                    &emsp;&emsp;padding: 20px 20px 16px 20px; <br />
+                    &emsp;&emsp;border-bottom: 4px solid #53658f; <br />
+                    &emsp;&emsp;transition: all 0.1s ease; <br />
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Transition on line 247</p>
+                  <code>
+                    .primary-button { &emsp;&emsp;margin-top: 8px; <br />
+                    &emsp;&emsp;padding: 0.5em 2em; <br />
+                    &emsp;&emsp;background-color: var(--primary); <br />
+                    &emsp;&emsp;color: white; <br />
+                    &emsp;&emsp;border-radius: 0.5rem; <br />
+                    &emsp;&emsp;transition: transform ease 0.2s, box-shadow ease
+                    0.2s; <br />
+                    &emsp;&emsp;display: inline-block; <br />
+                    &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br />
+                    } <br />
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>about.css</code></p>
+              <ol>
+                <li>
+                  <p>Rounded corners on lines 5, 11, 24</p>
+                  <code>
+                    .aboutimg { <br>
+                      &emsp;&emsp;margin: auto; <br>
+                      &emsp;&emsp;width: 75%; <br>
+                      &emsp;&emsp;object-fit: cover; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                    } <br>
+                    <br>
+                    .paragraphs { <br>
+                      &emsp;&emsp;padding: 0px 8px; <br>
+                      &emsp;&emsp;border: 1px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                    } <br>
+                    <br>
+                    caption { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;border-radius: 8px 8px 0 0; <br>
+                      &emsp;&emsp;overflow: hidden; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>apply.css</code></p>
+              <ol>
+                <li>
+                  <p>Rounded corners on lines 14, 41, 46</p>
+                  <code>
+                    .apply-block { <br>
+                      &emsp;&emsp;width: 80%; <br>
+                      &emsp;&emsp;padding: 12px; <br>
+                      &emsp;&emsp;margin: 0 auto; <br>
+                      &emsp;&emsp;border: 3px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;background-color: var(--secondary); <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    } <br>
+                    <br>
+                    #technology-heading { <br>
+                      &emsp;&emsp;border-top-left-radius: 8px; <br>
+                      &emsp;&emsp;border-right: none; <br>
+                    } <br>
+                    <br>
+                    #ecology-heading { <br>
+                      &emsp;&emsp;border-top-right-radius: 8px; <br>
+                      &emsp;&emsp;border-left: none; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Shadow on line 16</p>
+                  <code>
+                    .apply-block { <br>
+                      &emsp;&emsp;width: 80%; <br>
+                      &emsp;&emsp;padding: 12px; <br>
+                      &emsp;&emsp;margin: 0 auto; <br>
+                      &emsp;&emsp;border: 3px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;background-color: var(--secondary); <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Transition on forms hover on lines 89-94</p>
+                  <code>
+                    .technology-zone form:hover, <br>
+                    .innovation-zone form:hover, <br>
+                    .ecology-zone form:hover { <br>
+                      &emsp;&emsp;background-color: var(--accent); <br>
+                      &emsp;&emsp;transition: all ease-in 0.1s; <br>
+                    } <br>
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>printApply.css</code></p>
+              <ol>
+                <li>
+                  <p>Rounded corners on line 47</p>
+                  <code>
+                    input { <br>
+                      &emsp;&emsp;background: white; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>visit.css</code></p>
+              <ol>
+                <li>
+                  <p>Rounded corners on lines 15, 22, 30, 55, 71</p>
+                  <code>
+                    .fieldset-background { <br>
+                      &emsp;&emsp;width: 100%; <br>
+                      &emsp;&emsp;padding: 5%; <br>
+                      &emsp;&emsp;background: var(--secondary); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    } <br>
+                    <br>
+                    fieldset { <br>
+                      &emsp;&emsp;padding: 5%; <br>
+                      &emsp;&emsp;border: 3px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                    } <br>
+                    <br>
+                    fieldset legend { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;background: var(--accent); <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    }
+                    <br>
+                    .input input, <br>
+                    select { <br>
+                      &emsp;&emsp;width: 200px; <br>
+                      &emsp;&emsp;border: 2px solid var(--accent); <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;background: white; <br>
+                      &emsp;&emsp;outline: none; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                    } <br>
+                    <br>
+                    .buttons input { <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;margin-top: 1rem; <br>
+                      &emsp;&emsp;padding: 10px 20px; <br>
+                      &emsp;&emsp;border: 2px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;background: var(--primary); <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Shadow on lines 16, 33</p>
+                  <code>
+                    .fieldset-background { <br>
+                      &emsp;&emsp;width: 100%; <br>
+                      &emsp;&emsp;padding: 5%; <br>
+                      &emsp;&emsp;background: var(--secondary); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    } <br>
+                    <br>
+                    fieldset legend { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;background: var(--accent); <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Transition on lines 77-86</p>
+                  <code>
+                  .buttons input:hover { <br>
+                    &emsp;&emsp;background: var(--accent); <br>
+                    &emsp;&emsp;transition: all 0.1s ease; <br>
+                  } <br>
+                  <br>
+                  .buttons input:active { <br>
+                    &emsp;&emsp;border: 2px solid var(--secondary); <br>
+                    &emsp;&emsp;background: var(--secondary); <br>
+                    &emsp;&emsp;transition: all 0.1s ease; <br>
+                  } <br>
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>program.css</code></p>
+              <ol>
+                <li>
+                  <p>Responsive video width on lines 19-21</p>
+                  <code>
+                    video { <br>
+                      &emsp;&emsp;width: 100%; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>How styles are grouped into style sheet(s)/embedded style</p>
+
+          <ul>
+            <li>
+              <p><code>default.css</code></p>
+              <ol>
+                <li>
+                  <p>Universal box sizing on lines 3-7</p>
+                  <code>
+                    *, <br />
+                    *::before, <br />
+                    *::after { <br />
+                    &emsp;&emsp;box-sizing: border-box; <br />
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Grid layout styles on lines 85-89</p>
+                  <code>
+                    .columns { <br />
+                    &emsp;&emsp;display: grid; <br />
+                    &emsp;&emsp;grid-template-columns: 1fr 1fr; <br />
+                    &emsp;&emsp;gap: 1rem; <br />
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Import of Inter font on line 1</p>
+                  <code>
+                    @import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
+                  </code>
+                </li>
+                <li>
+                  <p>Font and typography styles on lines 22-81</p>
+                  <code>
+                    body { <br>
+                      &emsp;&emsp;font-family: "Inter"; <br>
+                      &emsp;&emsp;font-weight: 400; <br>
+                      &emsp;&emsp;color: var(--text); <br>
+                    } <br>
+                    <br>
+                    p, <br>
+                    h3, <br>
+                    h4, <br>
+                    h5 { <br>
+                      &emsp;&emsp;text-align: justify; <br>
+                    } <br>
+                    <br>
+                    h1, <br>
+                    h2, <br>
+                    h3, <br>
+                    h4, <br>
+                    h5 { <br>
+                      &emsp;&emsp;font-family: "Inter"; <br>
+                      &emsp;&emsp;font-weight: 700; <br>
+                    } <br>
+                    <br>
+                    html { <br>
+                      &emsp;&emsp;font-size: 100%; /* 16px */ <br>
+                    } <br>
+                    <br>
+                    h1 { <br>
+                      &emsp;&emsp;font-size: 4.21rem; /* 67.36px */ <br>
+                    } <br>
+                    <br>
+                    h2 { <br>
+                      &emsp;&emsp;font-size: 3.158rem; /* 50.56px */ <br>
+                    } <br>
+                    <br>
+                    h3 { <br>
+                      &emsp;&emsp;font-size: 2.369rem; /* 37.92px */ <br>
+                    } <br>
+                    <br>
+                    h4 { <br>
+                      &emsp;&emsp;font-size: 1.777rem; /* 28.48px */ <br>
+                    } <br>
+                    <br>
+                    h5 { <br>
+                      &emsp;&emsp;font-size: 1.333rem; /* 21.28px */ <br>
+                    } <br>
+                    <br>
+                    small { <br>
+                      &emsp;&emsp;font-size: 0.75rem; /* 12px */ <br>
+                    } <br>
+                    <br>
+                    a { <br>
+                      &emsp;&emsp;text-decoration: none; <br>
+                    } <br>
+                    <br>
+                    button, <br>
+                    input, <br>
+                    textarea, <br>
+                    select { <br>
+                      &emsp;&emsp;font: inherit; <br>
+                    } <br>
+                  </code>
+                </li>
+                <li>
+                  <p>Media queries on lines 98-103, 116-121, 185-190, 273-278</p>
+                  <code>
+                    @media (max-width: 650px) { <br>
+                      &emsp;&emsp;body { <br>
+                        &emsp;&emsp;&emsp;&emsp;margin: 0px; <br>
+                        &emsp;&emsp;&emsp;&emsp;background-color: var(--background1); <br>
+                        &emsp;&emsp;} <br>
+                    } <br>
+                    <br>
+                    @media (max-width: 650px) { <br>
+                      &emsp;&emsp;.header-navbar-container { <br>
+                        &emsp;&emsp;&emsp;&emsp;margin: 0px; <br>
+                        &emsp;&emsp;&emsp;&emsp;background-color: var(--background2); <br>
+                        &emsp;&emsp;} <br>
+                    } <br>
+                    <br>
+                    @media (max-width: 650px) { <br>
+                      &emsp;&emsp;main { <br>
+                        &emsp;&emsp;&emsp;&emsp;margin: auto; <br>
+                        &emsp;&emsp;&emsp;&emsp;width: 100%; <br>
+                        &emsp;&emsp;} <br>
+                    } <br>
+                    <br>
+                    @media (max-width: 650px) { <br>
+                      &emsp;&emsp;.footer-container { <br>
+                        &emsp;&emsp;&emsp;&emsp;margin: 0; <br>
+                        &emsp;&emsp;&emsp;&emsp;background-color: var(--background2); <br>
+                        &emsp;&emsp;} <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Table styles on lines 194-237</p>
+                  <code>
+                    table { <br>
+                      &emsp;&emsp;border-collapse: collapse; <br>
+                      &emsp;&emsp;margin: 25px 0; <br>
+                      &emsp;&emsp;font-size: 0.9em; <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                      &emsp;&emsp;max-height: 150px; <br>
+                    } <br>
+                    <br>
+                    thead tr { <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                    } <br>
+                    <br>
+                    thead tr th:first-of-type { <br>
+                      &emsp;&emsp;border-top-left-radius: 8px; <br>
+                    } <br>
+                    <br>
+                    thead tr th:last-of-type { <br>
+                      &emsp;&emsp;border-top-right-radius: 8px; <br>
+                    } <br>
+                    <br>
+                    th, <br>
+                    td { <br>
+                      &emsp;&emsp;padding: 8px 8px; <br>
+                    } <br>
+                    <br>
+                    tbody tr { <br>
+                      &emsp;&emsp;background-color: var(--background1); <br>
+                      &emsp;&emsp;border-bottom: 1px solid #dddddd; <br>
+                    } <br>
+                    <br>
+                    tbody tr:nth-of-type(even) { <br>
+                      &emsp;&emsp;background-color: #f3f3f3; <br>
+                    } <br>
+                    <br>
+                    tbody tr:hover { <br>
+                      &emsp;&emsp;background-color: var(--accent); <br>
+                    } <br>
+                    <br>
+                    tbody tr:last-of-type { <br>
+                      &emsp;&emsp;border-bottom: 2px solid var(--primary); <br>
+                    } <br>
+                  </code>
+                </li>
+                <li>
+                  <p>Button styles on lines 241-258</p>
+                  <code>
+                    .primary-button { <br>
+                      &emsp;&emsp;margin-top: 8px; <br>
+                      &emsp;&emsp;padding: 0.5em 2em; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;border-radius: 0.5rem; <br>
+                      &emsp;&emsp;transition: transform ease 0.2s, box-shadow ease 0.2s; <br>
+                      &emsp;&emsp;display: inline-block; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    } <br>
+                    <br>
+                    .primary-button:hover { <br>
+                      &emsp;&emsp;background-color: #475c8b; <br>
+                    } <br>
+                    <br>
+                    .primary-button:active { <br>
+                      &emsp;&emsp;background-color: #40527a; <br>
+                    } <br>
+                  </code>
+                </li>
+                <li>
+                  <p>Footer styles on lines 262-271</p>
+                  <code>
+                    footer { <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;margin: auto; <br>
+                      &emsp;&emsp;width: 75%; <br>
+                    } <br>
+                    <br>
+                    footer p { <br>
+                      &emsp;&emsp;margin-bottom: 0; <br>
+                      &emsp;&emsp;text-align: center; <br>
+                    } <br>
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>about.css</code></p>
+              <ol>
+                <li>
+                  <p>Layout styles on lines 1-6, 14-18</p>
+                  <code>
+                    .aboutimg { <br>
+                      &emsp;&emsp;margin: auto; <br>
+                      &emsp;&emsp;width: 75%; <br>
+                      &emsp;&emsp;object-fit: cover; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                    } <br>
+                    <br>
+                    .table-container { <br>
+                      &emsp;&emsp;max-width: 100%; <br>
+                      &emsp;&emsp;overflow-x: none; <br>
+                      &emsp;&emsp;margin-top: -25px; <br>
+                    } <br>
+                  </code>
+                </li>
+                <li>
+                  <p>Table styles on lines 14-34</p>
+                  <code>
+                    .table-container { <br>
+                      &emsp;&emsp;max-width: 100%; <br>
+                      &emsp;&emsp;overflow-x: none; <br>
+                      &emsp;&emsp;margin-top: -25px; <br>
+                    } <br>
+                    <br>
+                    caption { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;border-radius: 8px 8px 0 0; <br>
+                      &emsp;&emsp;overflow: hidden; <br>
+                    } <br>
+                    <br>
+                    thead tr th:first-of-type { <br>
+                      &emsp;&emsp;border-top-left-radius: 0; <br>
+                    } <br>
+                    <br>
+                    thead tr th:last-of-type { <br>
+                      &emsp;&emsp;border-top-right-radius: 0; <br>
+                    }
+                  </code>
+                  <li>
+                    <p>Border styles on lines 8-12</p>
+                    <code>
+                      .paragraphs { <br>
+                        &emsp;&emsp;padding: 0px 8px; <br>
+                        &emsp;&emsp;border: 1px solid var(--accent); <br>
+                        &emsp;&emsp;border-radius: 8px; <br>
+                      }
+                    </code>
+                  </li>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>apply.css</code></p>
+              <ol>
+                <li>
+                  <p>Typography styles on lines 1-3, 19-38</p>
+                  <code>
+                    #welcome { <br>
+                      &emsp;&emsp;text-align: center; <br>
+                    } <br>
+                    <br>
+                    .apply-block h3 { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;margin-bottom: 0.5rem; <br>
+                    } <br>
+                    <br>
+                    .apply-block h4 { <br>
+                      &emsp;&emsp;width: calc(100% / 3 - 2px); <br>
+                      &emsp;&emsp;padding: 8px; <br>
+                      &emsp;&emsp;margin-bottom: 0; <br>
+                      &emsp;&emsp;float: left; <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;text-align: center; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                    } <br>
+                    <br>
+                    .apply-block h4:hover { <br>
+                      &emsp;&emsp;background-color: white; <br>
+                      &emsp;&emsp;color: var(--text); <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Table styles on lines 40-110, 130-138</p>
+                  <code>
+                    #technology-heading { <br>
+                      &emsp;&emsp;border-top-left-radius: 8px; <br>
+                      &emsp;&emsp;border-right: none; <br>
+                    } <br>
+                    <br>
+                    #ecology-heading { <br>
+                      &emsp;&emsp;border-top-right-radius: 8px; <br>
+                      &emsp;&emsp;border-left: none; <br>
+                    } <br>
+                    <br>
+                    #innovation-heading { <br>
+                      &emsp;&emsp;border-right: none; <br>
+                      &emsp;&emsp;border-left: none; <br>
+                    } <br>
+                    <br>
+                    .technology-zone, <br>
+                    .innovation-zone, <br>
+                    .ecology-zone { <br>
+                      &emsp;&emsp;display: none; <br>
+                    } <br>
+                    <br>
+                    #technology-heading:hover ~ .technology-zone, <br>
+                    #innovation-heading:hover ~ .innovation-zone, <br>
+                    #ecology-heading:hover ~ .ecology-zone, <br>
+                    .technology-zone:hover, <br>
+                    .innovation-zone:hover, <br>
+                    .ecology-zone:hover { <br>
+                      &emsp;&emsp;display: block; <br>
+                    } <br>
+                    <br>
+                    #technology-heading:has(~ .technology-zone:hover), <br>
+                    #innovation-heading:has(~ .innovation-zone:hover), <br>
+                    #ecology_heading:has(~ .ecology-zone:hover) { <br>
+                      &emsp;&emsp;background-color: white; <br>
+                      &emsp;&emsp;color: var(--text); <br>
+                    } <br>
+                    <br>
+                    .technology-zone form, <br>
+                    .innovation-zone form, <br>
+                    .ecology-zone form { <br>
+                      &emsp;&emsp;width: calc(100% / 3 - 2px); <br>
+                      &emsp;&emsp;height: 100%; <br>
+                      &emsp;&emsp;margin: 0; <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;float: left; <br>
+                      &emsp;&emsp;background-color: white; <br>
+                      &emsp;&emsp;border: 1px solid var(--accent); <br>
+                    } <br>
+                    <br>
+                    .technology-zone form:hover, <br>
+                    .innovation-zone form:hover, <br>
+                    .ecology-zone form:hover { <br>
+                      &emsp;&emsp;background-color: var(--accent); <br>
+                      &emsp;&emsp;transition: all ease-in 0.1s; <br>
+                    } <br>
+                    <br>
+                    form label { <br>
+                      &emsp;&emsp;display: block; <br>
+                      &emsp;&emsp;margin-top: 0.5rem; <br>
+                      &emsp;&emsp;margin-bottom: 0.25rem; <br>
+                    } <br>
+                    <br>
+                    form img { <br>
+                      &emsp;&emsp;display: block; <br>
+                      &emsp;&emsp;width: 50%; <br>
+                    } <br>
+                    <br>
+                    form input, <br>
+                    form button { <br>
+                      &emsp;&emsp;margin-bottom: 8px; <br>
+                    } <br>
+                    <br>
+                    table { <br>
+                      &emsp;&emsp;font-size: 1.2em; <br>
+                    } <br>
+                    <br>
+                    th, <br>
+                    td { <br>
+                      &emsp;&emsp;padding: 8px 16px; <br>
+                      &emsp;&emsp;width: 300px; <br>
+                    } <br>
+                  </code>
+                </li>
+                <li>
+                  <p>Button styles on lines 112-124</p>
+                  <code>
+                    .input-button { <br>
+                      &emsp;&emsp;display: flex; <br>
+                      &emsp;&emsp;gap: 8px; <br>
+                    } <br>
+                    <br>
+                    .input-button input { <br>
+                      &emsp;&emsp;flex: 1; <br>
+                      &emsp;&emsp;max-width: calc(100% / 2); <br>
+                    } <br>
+                    <br>
+                    .input-button input { <br>
+                      &emsp;&emsp;flex-shrink: 0; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>printApply.css</code></p>
+              <ol>
+                <li>
+                  <p>Font and typography styles on lines 2-10, 41-43, 50-52</p>
+                  <code>
+                    * { <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-family: "Times New Roman", Times, serif; <br>
+                    } <br>
+                    <br>
+                    header, <br>
+                    footer { <br>
+                      &emsp;&emsp;text-align: center; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Table styles on lines 25-39</p>
+                  <code>
+                    table { <br>
+                      &emsp;&emsp;width: 90%; <br>
+                      &emsp;&emsp;height: auto; <br>
+                    } <br>
+                    <br>
+                    table, <br>
+                    th, <br>
+                    td { <br>
+                      &emsp;&emsp;border: 1px solid black; <br>
+                      &emsp;&emsp;border-collapse: collapse; <br>
+                    } <br>
+                    <br>
+                    td { <br>
+                      &emsp;&emsp;text-align: left; <br>
+                    } <br>
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>visit.css</code></p>
+              <ol>
+                <li>
+                  <p>Fieldset styles on lines 6-34</p>
+                  <code>
+                    .reservation-block { <br>
+                      &emsp;&emsp;width: 75%; <br>
+                      &emsp;&emsp;margin: auto; <br>
+                    } <br>
+                    <br>
+                    .fieldset-background { <br>
+                      &emsp;&emsp;width: 100%; <br>
+                      &emsp;&emsp;padding: 5%; <br>
+                      &emsp;&emsp;background: var(--secondary); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    } <br>
+                    <br>
+                    fieldset { <br>
+                      &emsp;&emsp;padding: 5%; <br>
+                      &emsp;&emsp;border: 3px solid var(--accent); <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;background-color: var(--primary); <br>
+                    } <br>
+                    <br>
+                    fieldset legend { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;background: var(--accent); <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Input, select, label styles on lines 36-64</p>
+                  <code>
+                    .input { <br>
+                      &emsp;&emsp;padding: 6px; <br>
+                      &emsp;&emsp;width: 100%; <br>
+                    } <br>
+                    <br>
+                    .input label { <br>
+                      &emsp;&emsp;color: white; <br>
+                      &emsp;&emsp;font-size: 1.125rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                      &emsp;&emsp;margin-right: 5%; <br>
+                    } <br>
+                    <br>
+                    .input input, <br>
+                    select { <br>
+                      &emsp;&emsp;width: 200px; <br>
+                      &emsp;&emsp;border: 2px solid var(--accent); <br>
+                      &emsp;&emsp;padding: 10px; <br>
+                      &emsp;&emsp;background: white; <br>
+                      &emsp;&emsp;outline: none; <br>
+                      &emsp;&emsp;border-radius: 8px; <br>
+                      &emsp;&emsp;font-size: 1rem; <br>
+                      &emsp;&emsp;font-weight: bold; <br>
+                    } <br>
+                    <br>
+                    label { <br>
+                      &emsp;&emsp;width: 140px; <br>
+                      &emsp;&emsp;display: inline-block; <br>
+                      &emsp;&emsp;text-align: right; <br>
+                    }
+                  </code>
+                </li>
+                <li>
+                  <p>Buttons styles on lines 77-86</p>
+                  <code>
+                    .buttons input:hover { <br>
+                      &emsp;&emsp;background: var(--accent); <br>
+                      &emsp;&emsp;transition: all 0.1s ease; <br>
+                    } <br>
+                    <br>
+                    .buttons input:active { <br>
+                      &emsp;&emsp;border: 2px solid var(--secondary); <br>
+                      &emsp;&emsp;background: var(--secondary); <br>
+                      &emsp;&emsp;transition: all 0.1s ease; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>program.css</code></p>
+              <ol>
+                <li>
+                  <p>Margin and alignment styles for different elements on lines 1-17</p>
+                  <code>
+                    .table-container { <br>
+                      margin-left: auto; <br>
+                      margin-right: auto; <br>
+                    } <br>
+                    <br>
+                    .promotion-information-block { <br>
+                      margin-bottom: 16px; <br>
+                    } <br>
+                    <br>
+                    h3 { <br>
+                      margin-top: 0; <br>
+                      text-align: center; <br>
+                    } <br>
+                    <br>
+                    h4 { <br>
+                      margin-top: 0; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4 style="text-align: center;">JavaScript</h4>
+
+      <ul>
+        <li>
+          <p>
+            Two ways of event handler setup (by JavaScript and in HTML). See the JavaScript Cookbook;
+            must be used at least once. State in the Design page where the two techniques are used (i.e.,
+            identify the JavaScript line no. at which the event handler is set up with what kind of method).
+          </p>
+
+          <ul>
+            <li>
+              <p><code>information.js</code></p>
+              <ol>
+                <li>
+                  <p>Handling of window load on lines 31-37.</p>
+                  <code>
+                    window.onload = () => { <br>
+                      &emsp;&emsp;getRandomPromotionalTextMessage(); <br>
+                      &emsp;&emsp;setInterval(getRandomPromotionalTextMessage, 3000); <br>
+                      <br>
+                      &emsp;&emsp;const videoElement = document.querySelector("video"); <br>
+                      &emsp;&emsp;videoElement.addEventListener("ended", switchVideo); <br>
+                    };
+                  </code>
+                </li>
+                <li>
+                  <p>Handling of ending of a video on line 36.</p>
+                  <code>
+                    videoElement.addEventListener("ended", switchVideo);
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>visit.js</code></p>
+              <ol>
+                <li>
+                  <p>Event listener, which is triggered when the DOM is completely loaded, on lines 1-58.</p>
+                  <code>
+                    document.addEventListener("DOMContentLoaded", () => { <br>
+                      &emsp;&emsp;... <br>
+                    });
+                  </code>
+                </li>
+                <li>
+                  <p>Event listener, which is triggered by form submission, on lines 33-53.</p>
+                  <code>
+                    form.addEventListener("submit", (e) => { <br>
+                      &emsp;&emsp;e.preventDefault(); <br>
+                      <br>
+                      &emsp;&emsp;const date = document.getElementById("reservation-date").value.trim(); <br>
+                      &emsp;&emsp;const time = document.getElementById("reservation-time").value.trim(); <br>
+                      &emsp;&emsp;const visitors = document.getElementById("number-of-visitors").value.trim(); <br>
+                      <br>
+                      &emsp;&emsp;if (!date || !time || !visitors) { <br>
+                        &emsp;&emsp;&emsp;&emsp;showMessage("Data not completed; please re-enter"); <br>
+                        &emsp;&emsp;&emsp;&emsp;return; <br>
+                      &emsp;&emsp;} <br>
+                      <br>
+                      &emsp;&emsp;const visitorNum = parseInt(visitors); <br>
+                      &emsp;&emsp;if (isNaN(visitorNum) || visitorNum < 1 || visitorNum !== Number(visitors)) { <br>
+                        &emsp;&emsp;&emsp;&emsp;showMessage("Please enter a valid number of people!"); <br>
+                        &emsp;&emsp;&emsp;&emsp;return; <br>
+                      &emsp;&emsp;} <br>
+                      <br>
+                      &emsp;&emsp;const result = reserve(date, time, visitorNum); <br>
+                      &emsp;&emsp;alert(result ? "Your reservation is successful!" : "Sorry, the reservation is full!", !result); <br>
+                    });
+                  </code>
+                </li>
+                <li>
+                  <p>Event listener, which is triggered by form reset, on lines 55-57.</p>
+                  <code>
+                    form.addEventListener("reset", () => { <br>
+                      &emsp;&emsp;clearMessages(); <br>
+                    });
+                  </code>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>apply.js</code></p>
+              <ol>
+                <li>
+                  <p>Event listener, which is triggered when the DOM is completely loaded, on lines 1-58.</p>
+                  <code>
+                    document.addEventListener("DOMContentLoaded", () => { <br>
+                      &emsp;&emsp;... <br>
+                    });
+                  </code>
+                </li>
+                <li>
+                  <p>Handling heading click events on lines 51-61.</p>
+                  <code>
+                    document.getElementById(headerId).onclick = () => { <br>
+                      &emsp;&emsp;const zones = document.querySelectorAll(".technology-zone, .innovation-zone, .ecology-zone"); <br>
+                      <br>
+                      &emsp;&emsp;for (let i = 0; i < zones.length; i++) { <br>
+                        &emsp;&emsp;&emsp;&emsp;zones[i].style.display = "none"; <br>
+                      &emsp;&emsp;} <br>
+                      <br>
+                      &emsp;&emsp;document.querySelector(zoneClass).style.display = "block"; <br>
+                      <br>
+                      &emsp;&emsp;updateHeadingStyles(headerId); <br>
+                    };
+                  </code>
+                </li>
+                <li>
+                  <p>Handling click events of rank buttons on lines 82-90.</p>
+                  <code>
+                    rankButtons[i].onclick = (e) => { <br>
+                      &emsp;&emsp;e.preventDefault(); <br>
+                      &emsp;&emsp;const form = this.closest("form"); <br>
+                      &emsp;&emsp;const rank = form.querySelector('input[type="number"]').value; <br>
+                      &emsp;&emsp;const company = form.querySelector("label").textContent; <br>
+                      &emsp;&emsp;const zone = getZoneFromForm(form); <br>
+                      <br>
+                      &emsp;&emsp;handleRankSelection(rank, company, zone); <br>
+                    };
+                  </code>
+                </li>
+                <li>
+                  <p>Handling of submit button click on lines 220-223.</p>
+                  <code>
+                    document.querySelector('input[type="submit"]').parentElement.addEventListener("click", (e) => { <br>
+                      &emsp;&emsp;e.preventDefault(); <br>
+                      &emsp;&emsp;handleSubmission(); <br>
+                    });
+                  </code>
+                </li>
+                <li>
+                  <p>Handling of reset button click on lines 225-228.</p>
+                  <code>
+                    document.querySelector('input[type="reset"]').parentElement.addEventListener("click", (e) => { <br>
+                      &emsp;&emsp;e.preventDefault(); <br>
+                      &emsp;&emsp;clearTable(); <br>
+                    });
+                  </code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            In June 2015, ECMAScript 6 was officially adopted as an international standard. Its goal is to
+            make the JavaScript language usable for writing complex, large-scale applications and to become
+            an enterprise-level development language. Currently, browser support for ES6 can be viewed at
+            kangax.github.io/compat-table/es6/. To encourage students to engage with the latest advances in
+            JavaScript, this assignment will give bonuses for using the following ES6 features. Indicate on
+            the Design page where ES6 features are used and which features are used. (i.e., indicate the
+            JavaScript line number and explain the use of the feature to convince the Teaching Assistant
+            that you are not just copying sample code and using it for the sake of using it). <br>
+            (1)  let and const <br>
+            (2)  set and map <br>
+            (3)  class <br>
+          </p>
+
+          <ul>
+            <li>
+              <p><code>information.js</code></p>
+              <ol>
+                <li>
+                  <p>Constant array of promotional text messages on lines 1-5.</p>
+                  <code>
+                    const promotionalTextMessages = [ <br>
+                    &emsp;&emsp;"Join  our  company  in Technology Zone of Visionary Innovation Hub for unparalleled opportunities in cutting-edge tech development! 15 QUOTAS LEFT!", <br>
+                    &emsp;&emsp;"Become part of the Innovation Zone at  Visionary Innovation Hub, where creativity meets research for  groundbreaking solutions! 10 QUOTAS LEFT!", <br>
+                    &emsp;&emsp;"Discover  the  Eco  Zone  at  Visionary  Innovation  Hub,  dedicated  to  sustainable practices  and technologies  for a greener future! 12 QUOTAS LEFT!", <br>
+                    ];
+                  </code>
+                </li>
+                <li>
+                  <p>
+                    Constant <code>promotionText</code>, which selects h4 element that contains promotion text, and constant <code>randomIndex</code>,
+                    which generates random index for random choice of promotion text from <code>promotionalTextMessages</code> array, on lines 8-9.
+                  </p>
+                  <code>
+                    const promotionText = document.querySelector(".promotion-information-block h4");
+                  </code>
+                </li>
+                <li>
+                  <p>
+                    <code>videoElement</code> constant queries the video tag. <code>currentSrc</code> constant contains the <code>src</code> attribute value of videoElement.
+                    <code>video1</code> and <code>video2</code> constants hold urls of two videos. <code>newSrc</code> checks if <code>currentSrc</code> contains the url of video1
+                    and changes it to the other video if true, and keeps the same if false. Lines: 14-19.
+                  </p>
+                  <code>
+                    const videoElement = document.querySelector("video"); <br>
+                    const currentSrc = videoElement.querySelector("source").src; <br>
+                    const video1 = "https://personal.cs.cityu.edu.hk/~cs2204/2024/video/video1.mp4"; <br>
+                    const video2 = "https://personal.cs.cityu.edu.hk/~cs2204/2024/video/video2.mp4"; <br>
+                    <br>
+                    const newSrc = currentSrc.includes("video1") ? video2 : video1; <br>
+                  </code>
+                </li>
+                <li>
+                  <p>
+                    <code>videoElement</code> constant on line 35 selects video element, which is then used to "listen" if the video inside of the element has ended
+                    and call <code>switchVideo</code> function on the end of the video.
+                  </p>
+                  <code>const videoElement = document.querySelector("video");</code>
+                </li>
+                <li>
+                  <p>Template literals used for dynamic video source on lines 16-21.</p>
+                  <code>
+                    videoElement.innerHTML = ` <br>
+                    &emsp;&emsp;&lt;source src="${newSrc}" type="video/mp4"&gt; <br>
+                    &emsp;&emsp;&lt;source src="${newSrc.replace(".mp4", ".webm")}" type="video/webm"&gt; <br>
+                    &emsp;&emsp;&lt;h4&gt;Your browser does not support this video format&lt;/h4&gt; <br>
+                    `;
+                  </code>
+                  <p>
+                    Here, <code>${newSrc}</code> dynamically inserts the value of newSrc (either url of video1 or of video2)
+                    into the src attribute of the <code>&lt;source&gt;</code> tag. <br>
+                    The second <source> tag replaces the .mp4 extension with .webm, assuming the browser might prefer
+                    a WebM format if available.
+                  </p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>visit.js</code></p>
+              <ol>
+                <li>
+                  <p>There are 9 constants in this script, which mainly select html elements:</p>
+                  <p>
+                    Line 2: <code>const form = document.querySelector("form");</code>
+                  </p>
+                  <p>
+                    Line 3: <code>const buttons = document.querySelector(".buttons");</code>
+                  </p>
+                  <p>
+                    Line 8: <code>const messageDiv = document.createElement("div");</code>
+                  </p>
+                  <p>
+                    Line 26: <code>const existingMessages = document.querySelectorAll(".message");</code>
+                  </p>
+                  <p>
+                    Line 36: <code>const date = document.getElementById("reservation-date").value.trim();</code>
+                  </p>
+                  <p>
+                    Line 37: <code>const time = document.getElementById("reservation-time").value.trim();</code>
+                  </p>
+                  <p>
+                    Line 38: <code>const visitors = document.getElementById("number-of-visitors").value.trim();</code>
+                  </p>
+                  <p>
+                    Line 45: <code>const visitorNum = parseInt(visitors);</code>
+                    holds the value of <code>visitors</code> constant, which is converted to integer.
+                  </p>
+                  <p>
+                    Line 51: <code>const result = reserve(date, time, visitorNum);</code>,
+                    contains the result of the function reserve
+                  </p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p><code>apply.js</code></p>
+              <ol>
+                <li>
+                  <p>37 constants are used in this script.</p>
+
+                  <ul>
+                    <li>
+                      <p>
+                        Lines 4-6: constants that store heading elements.<br>
+                        <code>
+                          const technologyHeading = document.getElementById("technology-heading");<br>
+                          const innovationHeading = document.getElementById("innovation-heading");<br>
+                          const ecologyHeading = document.getElementById("ecology-heading");<br>
+                        </code>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 20, 24, 27: constants for table initialization. <br>
+                        <code>
+                          const tbody = document.querySelector(".resulting-block table tbody"); <br> <br>
+                          const row = document.createElement("tr"); <br> <br>
+                          const cell = document.createElement("td");
+                        </code>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Line 44-48: constant headings object with key-value pairs.
+                      </p>
+                      <code>
+                        const headings = { <br>
+                          &emsp;&emsp;"technology-heading": ".technology-zone", <br>
+                          &emsp;&emsp;"innovation-heading": ".innovation-zone", <br>
+                          &emsp;&emsp;"ecology-heading": ".ecology-zone", <br>
+                        };
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Line 50: const is used to destructure headings object.
+                      </p>
+                      <code>
+                        for (const [headerId, zoneClass] of Object.entries(headings)) { ... };
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Line 52: const zones is used to store all zone divs. Then, these zones are hidden,
+                        and only the clicked heading with corresponding zone is displayed.
+                      </p>
+                      <code>
+                        const zones = document.querySelectorAll(".technology-zone, .innovation-zone, .ecology-zone");
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Line 66, 68: consts are used here to store ids of headings and using const header we can
+                        iteratively change the style of every heading based on which one was clicked.
+                      </p>
+                      <code>
+                        const headings = ["technology-heading", "innovation-heading", "ecology-heading"]; <br>
+                        const header = document.getElementById(headings[i]);
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 84-87: consts are used to get related elements of a company
+                        so that they could be processed by <code>handleRankSelection</code> function.
+                      </p>
+                      <code>
+                        const form = this.closest("form"); <br>
+                        const rank = form.querySelector('input[type="number"]').value; <br>
+                        const company = form.querySelector("label").textContent; <br>
+                        const zone = getZoneFromForm(form); <br>
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 122, 124: const is used here to get tbody for subsequent iterative assignment of ranking, zone and company to grandchildren (cells) of tbody.
+                      </p>
+                      <code>
+                        const tbody = document.querySelector(".resulting-block table tbody"); <br> <br>
+                        for (const row of tbody.children) {...}
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 139, 141, 142, 152, 154, 155: consts are used here for iterative checking of duplicates in the table.
+                      </p>
+                      <code>
+                        function isCompanyDuplicate(company) { <br>
+                          &emsp;&emsp;const tbody = document.querySelector("table tbody"); <br> <br>
+
+                          &emsp;&emsp;for (const row of tbody.rows) { <br>
+                            &emsp;&emsp;&emsp;&emsp;const cells = row.querySelectorAll("td"); <br>
+                            &emsp;&emsp;&emsp;&emsp;if (cells[1].textContent.trim() === company) { <br>
+                              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return true; <br>
+                              &emsp;&emsp;&emsp;&emsp;} <br>
+                          &emsp;&emsp;} <br> <br>
+
+                          &emsp;&emsp;return false; <br>
+                        } <br> <br>
+
+                      function isRankDuplicate(rank) { <br>
+                        &emsp;&emsp;const tbody = document.querySelector("table tbody"); <br> <br>
+
+                        &emsp;&emsp;for (const row of tbody.rows) { <br>
+                          &emsp;&emsp;&emsp;&emsp;const cells = row.querySelectorAll("td"); <br> <br>
+
+                          &emsp;&emsp;&emsp;&emsp;if ( <br>
+                          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cells[0].textContent.trim() !== "" && <br>
+                          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cells[1].textContent.trim() !== "" && <br>
+                          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cells[2].textContent.trim() === rank <br>
+                          &emsp;&emsp;&emsp;&emsp;) { <br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return true; <br>
+                            &emsp;&emsp;&emsp;&emsp;} <br>
+                            &emsp;&emsp;} <br> <br>
+
+                            &emsp;&emsp;return false; <br>
+                        }
+                      </code>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 170, 171: const s stores ordinal suffixes, const v stores the remainder
+                        when n is divided by 100. It is used to hanndle exceptions like 11, 12, 13.
+                      </p>
+                      <code>
+                        function getOrdinal(n) {
+                          &emsp;&emsp;const s = ["th", "st", "nd", "rd"]; <br>
+                          &emsp;&emsp;const v = n % 100; <br>
+                          &emsp;&emsp;return n + (s[(v - 20) % 10] || s[v] || s[0]); <br>
+                        }
+                      </code>
+                    </li>
+                    <li>
+                      <p>Lines 176, 180: consts are used for iterative checking and updating of the table.</p>
+                    </li>
+                    <li>
+                      <p>Line 199: const now stores current date.</p>
+                    </li>
+                    <li>
+                      <p>Line 213: const timeZone stores a string "GMT+0800 (China Standard Time)"</p>
+                    </li>
+                    <li>
+                      <p>
+                        Lines 263, 264, 286-288: consts are used to get tbody and rows of the table for
+                        gap evaluation and last three consts are used to generate a message.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Lines 301, 305, 308: consts are used for iterative clearing of the table.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>8 out of 13 let are used for loops. Other 5 are used for the following:</p>
+                  <ul>
+                    <li>
+                      <p>Line 178: let count is used to contain the number of filled rows in the table.</p>
+                      <code>
+                        let count = 0; <br>
+                        rows.forEach((row) => { <br>
+                          &emsp;&emsp;const cells = row.querySelectorAll("td"); <br> <br>
+
+                          &emsp;&emsp;if ( <br>
+                            &emsp;&emsp;&emsp;&emsp;cells[0].textContent.trim() !== "" && <br>
+                            &emsp;&emsp;&emsp;&emsp;cells[1].textContent.trim() !== "" && <br>
+                            &emsp;&emsp;&emsp;&emsp;cells[2].textContent.trim() !== "" <br>
+                                &emsp;&emsp;) { <br>
+                                  &emsp;&emsp;&emsp;&emsp;count++; <br>
+                                &emsp;&emsp;} <br>
+                        });
+                      </code>
+                    </li>
+                    <li>
+                      <p>Line 200: let timeString defines how date should look.</p>
+                      <code>
+                        let timeString = now.toLocaleString("en-US", { <br>
+                          &emsp;&emsp;weekday: "short", <br>
+                          &emsp;&emsp;day: "2-digit", <br>
+                          &emsp;&emsp;month: "short", <br>
+                          &emsp;&emsp;year: "numeric", <br>
+                          &emsp;&emsp;hour: "2-digit", <br>
+                          &emsp;&emsp;minute: "2-digit", <br>
+                          &emsp;&emsp;second: "2-digit", <br>
+                          &emsp;&emsp;hour12: false, <br>
+                      });
+                      </code>
+                    </li>
+                    <li>
+                      <p>Line 250: let messageElement is used to display messages.</p>
+                    </li>
+                    <li>
+                      <p>
+                        Line 266, 278: In the checkForGaps function, the two variables lastFilledIndex
+                        and gaps are used to track the state of certain rows in a table.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>
+                    There is only one case of map being used. On line 286, in the checkForGaps function,
+                    map is used to transform the array of numbers stored in the gaps array into their corresponding
+                    ordinal representations.
+                  </p>
+                  <code>
+                    if (gaps.length > 0) { <br>
+                      &emsp;&emsp;const gapOrdinals = gaps.map((num) => getOrdinal(num)); <br>
+                      &emsp;&emsp;const stringOfGapOrdinals = gapOrdinals.join(", "); <br>
+                      &emsp;&emsp;const message = <br>
+                      &emsp;&emsp;`You have not chosen your ${stringOfGapOrdinals} <br>
+                      &emsp;&emsp;chosen ${gaps.length === 1 ? "company" : "companies"}, <br>
+                      &emsp;&emsp;you can not leave any gap between your chosen companies.`; <br> <br>
+
+                      &emsp;&emsp;showMessage(message, true); <br> <br>
+
+                      &emsp;&emsp;return true; <br>
+                    }
+                  </code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+
+    <div class="footer-container">
+      <footer>
+        <img
+          src="../assets/images/footer_logo.png"
+          width="260"
+          height="40"
+          alt="Visionary Innovation Hub Footer Logo"
+        />
+        <p>
+          &copy; CityU 2024 sources of images and text from Wikipedia Commons
+          and Courtesy of Icon pack by Icons8 -- designed by
+          <a href="design.html">Yergebayev Alimkhan</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

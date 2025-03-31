@@ -1,0 +1,93 @@
+h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.reservation-block {
+  width: 75%;
+  margin: auto;
+}
+
+.fieldset-background {
+  width: 100%;
+  padding: 5%;
+  background: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  padding: 5%;
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  background-color: var(--primary);
+}
+
+fieldset legend {
+  color: white;
+  background: var(--accent);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.input {
+  padding: 6px;
+  width: 100%;
+}
+
+.input label {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-right: 5%;
+}
+
+.input input,
+select {
+  width: 200px;
+  border: 2px solid var(--accent);
+  padding: 10px;
+  background: white;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+label {
+  width: 140px;
+  display: inline-block;
+  text-align: right;
+}
+
+.buttons input {
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+.buttons:not(.has-message) input {
+  margin-top: 1rem;
+}
+
+.buttons input:hover {
+  background: var(--accent);
+  transition: all 0.1s ease;
+}
+
+.buttons input:active {
+  border: 2px solid var(--secondary);
+  background: var(--secondary);
+  transition: all 0.1s ease;
+}
+
+h3 {
+  text-align: center;
+}

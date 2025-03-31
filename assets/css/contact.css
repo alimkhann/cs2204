@@ -1,0 +1,9 @@
+.contact-block {
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  margin: 0px;
+  text-align: center;
+}

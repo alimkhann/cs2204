@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700|Inter:400");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* colors */
+
+:root {
+  --text: #0f1115;
+  --background1: #f3f4f8;
+  --background2: #ced5ef;
+  --primary: #5e75a9;
+  --secondary: #9cacd3;
+  --accent: #7690cc;
+}
+
+/* font and typography */
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  color: var(--text);
+}
+
+p,
+h3,
+h4,
+h5 {
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%; /* 16px */
+}
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* layout */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* body */
+
+body {
+  background-color: var(--background2);
+  margin: 32px;
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: 0px;
+    background-color: var(--background1);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .header-navbar-container {
+    margin: 0px;
+    background-color: var(--background2);
+  }
+}
+
+/* header gradient */
+
+.color-effect {
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+  background-clip: text;
+  color: transparent;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: var(--background2);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0 20%;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: var(--text);
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+  padding: 20px 20px 16px 20px;
+  border-bottom: 4px solid var(--accent);
+  transition: all 0.1s ease;
+}
+
+.navbar a:active {
+  color: #425276;
+  padding: 20px 20px 16px 20px;
+  border-bottom: 4px solid #53658f;
+  transition: all 0.1s ease;
+}
+
+/* main */
+
+main {
+  margin: auto;
+  width: 75%;
+  padding: 32px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background-color: var(--background1);
+}
+
+main img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 650px) {
+  main {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  max-height: 150px;
+}
+
+thead tr {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+thead tr th:first-of-type {
+  border-top-left-radius: 8px;
+}
+
+thead tr th:last-of-type {
+  border-top-right-radius: 8px;
+}
+
+th,
+td {
+  padding: 8px 8px;
+}
+
+tbody tr {
+  background-color: var(--background1);
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:hover {
+  background-color: var(--accent);
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid var(--primary);
+}
+
+/* button */
+
+.primary-button {
+  margin-top: 8px;
+  padding: 0.5em 2em;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button:hover {
+  background-color: #475c8b;
+}
+
+.primary-button:active {
+  background-color: #40527a;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+footer p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    margin: 0;
+    background-color: var(--background2);
+  }
+}

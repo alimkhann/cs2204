@@ -1,0 +1,53 @@
+@media print {
+  * {
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .welcome-block,
+  nav,
+  .apply-block {
+    display: none;
+  }
+
+  .resulting-blocking-block h3,
+  .resulting-block h4,
+  .resulting-block table,
+  .resulting-block a {
+    margin-top: 10px;
+  }
+
+  table {
+    width: 90%;
+    height: auto;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  input {
+    background: white;
+    border-radius: 8px;
+  }
+
+  footer p a {
+    color: black;
+  }
+}

@@ -1,0 +1,152 @@
+#welcome {
+  text-align: center;
+}
+
+main img {
+  box-shadow: none;
+}
+
+.apply-block {
+  width: 80%;
+  padding: 12px;
+  margin: 0 auto;
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  background-color: var(--secondary);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.apply-block h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.apply-block h4 {
+  width: calc(100% / 3 - 2px);
+  padding: 8px;
+  margin-bottom: 0;
+  float: left;
+  color: white;
+  text-align: center;
+  background-color: var(--primary);
+}
+
+/* Commented out hover rules for CW3 implementation
+.apply-block h4:hover {
+  background-color: white;
+  color: var(--text);
+}
+
+#technology-heading:hover ~ .technology-zone,
+#innovation-heading:hover ~ .innovation-zone,
+#ecology-heading:hover ~ .ecology-zone,
+.technology-zone:hover,
+.innovation-zone:hover,
+.ecology-zone:hover {
+  display: block;
+}
+
+#technology-heading:has(~ .technology-zone:hover),
+#innovation-heading:has(~ .innovation-zone:hover),
+#ecology_heading:has(~ .ecology-zone:hover) {
+  background-color: white;
+  color: var(--text);
+}
+*/
+
+#technology-heading {
+  border-top-left-radius: 8px;
+  border-right: none;
+}
+
+#ecology-heading {
+  border-top-right-radius: 8px;
+  border-left: none;
+}
+
+#innovation-heading {
+  border-right: none;
+  border-left: none;
+}
+
+.technology-zone {
+  display: block;
+}
+
+.innovation-zone,
+.ecology-zone {
+  display: none;
+}
+
+.technology-zone form,
+.innovation-zone form,
+.ecology-zone form {
+  width: calc(100% / 3 - 2px);
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  float: left;
+  background-color: white;
+  border: 1px solid var(--accent);
+}
+
+.technology-zone form:hover,
+.innovation-zone form:hover,
+.ecology-zone form:hover {
+  background-color: var(--accent);
+  transition: all ease-in 0.1s;
+}
+
+form label {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+form img {
+  display: block;
+  width: 50%;
+}
+
+form input,
+form button {
+  margin-bottom: 8px;
+}
+
+.input-rank {
+  display: flex;
+  gap: 8px;
+}
+
+.input-rank input {
+  flex: 1;
+  max-width: calc(100% / 2);
+}
+
+.input-rank input {
+  flex-shrink: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+table {
+  font-size: 1.2em;
+}
+
+th,
+td {
+  padding: 8px 16px;
+  width: 300px;
+}
+
+.submission-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-align: center;
+}
